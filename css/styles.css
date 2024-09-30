@@ -529,6 +529,10 @@ body {
   background-color: #31d0aa;
 }
 
+.subscribe-form {
+  display: flex;
+}
+
 .subscribe-wrapper {
   display: flex;
 
