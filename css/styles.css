@@ -587,10 +587,6 @@ body {
 }
 
 .subscribe-icon {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 24px;
   fill: #fff;
   margin-left: 16px;
 }
@@ -645,13 +641,20 @@ body {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .model-close:hover,
 .model-close:focus {
   background-color: #404bbf;
   fill: #fff;
+}
+.model-close-btn {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.model {
+  padding: 72px 24px 24px 24px;
 }
 
 .model-slogan {
@@ -797,7 +800,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
-
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-form-submit:hover,
